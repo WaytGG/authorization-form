@@ -8,6 +8,20 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    
+    <div class="wrapper">
+     <form class="sign-up" method="get">
+       <label class="heading-signup"> Don't have an account? </label>
+       <button class="button-signup" type="submit">Sign up</button>
+     </form>
+     <form class="login" action="#"  method="post">
+       <fieldset class="user">
+         <input class="input-username" autofocus type="text" placeholder="Username" pattern="[a-z]{1,15}"  title="Username should only contain lowercase english letters." required/>
+       </fieldset>
+       <fieldset class="password">
+         <input class="input-pwd" type="password" placeholder="Password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Password must contain 1 capital letter and one number.Minimum 8 symbols " required/>
+       </fieldset>
+       <button class="button-login" type="submit">Log in</button>
+     </form>
+   </div>
   </body>
 </html>
